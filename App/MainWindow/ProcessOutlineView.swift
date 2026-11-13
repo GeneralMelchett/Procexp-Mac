@@ -1316,7 +1316,7 @@ struct ProcessOutlineView: NSViewRepresentable {
                 case .cpu:
                     return "\(readout)\n100% is one fully busy logical core. A multithreaded process can exceed 100%."
                 case .privateBytes:
-                    return "\(readout)\nPhysical footprint: memory charged to this process. Not resident memory or Windows private bytes. Unavailable values remain blank."
+                    return "\(readout)\nPhysical footprint: memory charged to this process by macOS. Distinct from resident memory (RSS). Unavailable values remain blank."
                 case .workingSet:
                     return "\(readout)\nResident memory (RSS): physical pages resident for the process, distinct from physical footprint."
                 case .company:
